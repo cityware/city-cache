@@ -43,7 +43,7 @@
     "suggest": {
         "ext-intl": "Required for most features of Zend\\I18n; included in default builds of PHP",
         "zendframework/zend-config": "Zend\\Config component",
-        "zendframework/zend-db": "Zend\\Db component"
+        "zendframework/zend-cache": "Zend\\Cache component"
     },
     "minimum-stability":"dev",
     "prefer-stable": true,
