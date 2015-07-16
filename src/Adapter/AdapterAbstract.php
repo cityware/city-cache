@@ -62,7 +62,8 @@ abstract class AdapterAbstract {
         if (empty($this->cacheDir)) {
             try {
                 if (!file_exists(CACHE_PATH . $this->moduleName . DS . $this->controllerName)) {
-                    mkdir(CACHE_PATH . $this->moduleName . DS . $this->controllerName, '0777', true);
+                    mkdir(CACHE_PATH . $this->moduleName . DS . $this->controllerName, 0777, true);
+                    chmod(CACHE_PATH . $this->moduleName . DS . $this->controllerName, 0777);
                 }
 
                 $this->cacheDir = CACHE_PATH . $this->moduleName . DS . $this->controllerName;
